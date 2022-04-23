@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_HomeLayout.cshtml";
+}
+
+
+<h1>ÇIKIŞ YAPMAK ÜZERESİNİZ :( </h1>
+
+
+@using (Html.BeginForm("Index", "Exit", FormMethod.Post))
+{
+    <button class="btn btn-dark">Çıkış Yap</button>
+}
+

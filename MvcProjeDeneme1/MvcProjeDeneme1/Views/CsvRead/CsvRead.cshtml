@@ -1,0 +1,27 @@
+﻿@using EntityLaayer.Concrete
+@model List<Cars>
+@{
+    Layout = null;
+}
+<table class=" table table-bordered">
+
+    <tr>
+        <th>Tarih</th>
+        <th> Enlem </th>
+        <th> Boylam </th>
+        <th> ID </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td> @item.dateTime</td> <!-- bu item modeli tutuyor modelin içinde ne var category listesi-->
+            <td> @item.lat</td>
+            <td> @item.lng</td>
+            <td> @item.id</td>
+
+
+        </tr>
+
+    }
+</table>
